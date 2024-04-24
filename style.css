@@ -1,0 +1,31 @@
+body{
+    background-color: dimgrey;
+    display: flex;
+    justify-content: center;
+}
+
+.homescreen{
+   
+    background-color: ghostwhite;
+    margin: 500px;
+    border-radius: 20px;
+    width: 500px;
+    height: 260px;
+}
+
+.playbutton{
+    width: 90px;
+    height: 40px;
+    font-family: monospace;
+    font-weight: 100;
+    font-size: large;
+    margin-top: 50px;
+    margin-right: 300px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+.h101{
+    margin-left: 100px;
+    font-family: monospace;
+    margin-top: 30px;
+}

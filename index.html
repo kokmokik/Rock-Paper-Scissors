@@ -4,78 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPS-Game </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Press F12 to play</h1>
-    <p>enter PlayRound() to start 1 game</p>
-    <script>
+   
+   <div class="homescreen">
+    <h1 class="h101">Rock Paper Scissors</h1>
+    <button class="playbutton">
+        PLAY
+    </button>
+   </div>
 
-
-        //returns rock;paper;scissors
-       function getComputersChoice() 
-       {
-        let result
-        result = Math.floor(Math.random()*3)+1
-        switch (result){
-            case 1 :
-            result = "Rock"
-            break;
-            case 2:
-                result = "Paper"
-            break;
-            case 3: 
-                result = "Scissors"
-            break;
-        }
-        return result;
-       
-       }
-
-
-       //returns players choice (RPS)
-       function getPlayersChoice(){
-        let plresult;
-        plresult = prompt("ENTER : Rock, Paper ,Scissors")
-        if(plresult === "Rock"||plresult === "Paper"||plresult === "Scissors"){
-            return plresult;
-       }
-       else if(plresult != "Rock"|| plresult != "Paper"|| plresult != "Scissors"){
-        console.log("ENTER A CORRECT VALUE")
-       }
-      
-       }
-
-       function playRound(){
-        let CoputerChoice = getComputersChoice();
-        let PlayerChoice = getPlayersChoice()
-        if(PlayerChoice === "Paper" && CoputerChoice === "Paper" ){
-            console.log("its a tie")
-        }
-        else if(PlayerChoice === "Paper" && CoputerChoice === "Rock"){
-            console.log("you win");
-        }
-        else if(PlayerChoice === "Rock" && CoputerChoice === "Scissors"){
-            console.log("you win");
-        }
-        else if(PlayerChoice === "Scissors" && CoputerChoice === "Paper"){
-            console.log("you win");
-        }
-        else if(PlayerChoice === "Rock" && CoputerChoice === "Rock"){
-            console.log("its a tie")
-        }
-        else if(PlayerChoice === "Scissors" && CoputerChoice === "Scissors"){
-            console.log("its a tie")
-        }
-        else if(PlayerChoice === "Rock" && CoputerChoice === "Paper"){
-            console.log("you loose")
-        }
-        else if(PlayerChoice === "Paper" && CoputerChoice === "Scissors"){
-            console.log("you loose")
-        }
-        else if(PlayerChoice === "Scissors" && CoputerChoice === "Rock"){
-            console.log("you loose")
-        }
-       }
-</script>
 </body>
+<script>
+    
+//returns rock;paper;scissors
+function getComputersChoice() 
+{
+let result
+result = Math.floor(Math.random()*3)+1
+switch (result){
+    case 1 :
+    result = "Rock"
+    break;
+    case 2:
+        result = "Paper"
+    break;
+    case 3: 
+        result = "Scissors"
+    break;
+}
+return result;
+
+}
+
+
+//returns players choice (RPS)
+function getPlayersChoice(){
+let plresult;
+plresult = prompt("ENTER : Rock, Paper ,Scissors")
+if(plresult === "Rock"||plresult === "Paper"||plresult === "Scissors"){
+    return plresult;
+}
+else if(plresult != "Rock"|| plresult != "Paper"|| plresult != "Scissors"){
+console.log("ENTER A CORRECT VALUE")
+}
+
+}
+
+function playRound(){
+let CoputerChoice = getComputersChoice();
+let PlayerChoice = getPlayersChoice()
+if(PlayerChoice === "Paper" && CoputerChoice === "Paper" ){
+    console.log("its a tie")
+}
+else if(PlayerChoice === "Paper" && CoputerChoice === "Rock"){
+    console.log("you win");
+}
+else if(PlayerChoice === "Rock" && CoputerChoice === "Scissors"){
+    console.log("you win");
+}
+else if(PlayerChoice === "Scissors" && CoputerChoice === "Paper"){
+    console.log("you win");
+}
+else if(PlayerChoice === "Rock" && CoputerChoice === "Rock"){
+    console.log("its a tie")
+}
+else if(PlayerChoice === "Scissors" && CoputerChoice === "Scissors"){
+    console.log("its a tie")
+}
+else if(PlayerChoice === "Rock" && CoputerChoice === "Paper"){
+    console.log("you loose")
+}
+else if(PlayerChoice === "Paper" && CoputerChoice === "Scissors"){
+    console.log("you loose")
+}
+else if(PlayerChoice === "Scissors" && CoputerChoice === "Rock"){
+    console.log("you loose")
+}
+}
+
+</script>
+
 </html>
