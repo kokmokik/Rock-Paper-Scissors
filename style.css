@@ -1,8 +1,11 @@
 body{
     background-color: dimgrey;
     display: flex;
-    justify-content: center;
-    flex-shrink: 0;
+    align-items: center;
+   flex-grow: 0;
+   justify-content: center;
+   flex-direction: column;
+   gap: 50px
 }
 
 .homescreen{
@@ -10,11 +13,11 @@ body{
     align-items: center;
     gap: 10px;
     background-color: ghostwhite;
-    margin: 500px;
     border-radius: 20px;
     min-width: 500px;
     min-height: 260px;
     padding-right: 50px;
+    margin-top: 300px ;
 }
 
 .rps01{
@@ -28,6 +31,7 @@ body{
     margin-left: 100px;
     font-family: monospace;
     margin-top: 30px;
+    margin-right: 50px;
 }
 .rps02{
     width: 90px;
@@ -43,4 +47,30 @@ body{
         font-weight: 100;
         font-size: large;
         }
-    
+    .result{
+        
+        background-color: ghostwhite;
+        border-radius: 20px;
+        min-width: 500px;
+        min-height: 260px;
+        max-height: 260px;
+        max-width: 500px;
+        justify-content: center;
+       
+    }
+    .h102{
+        font-family: monospace;
+        margin-top: 30px;
+        margin-left: 200px;
+        }
+    .Player,.computer{
+        font-family: monospace;
+      
+    }
+    .container{
+        display: flex;
+        gap: 150px;
+        margin-left: 150px;
+        margin-bottom: 60px;
+        margin-top: 50px;
+    }
