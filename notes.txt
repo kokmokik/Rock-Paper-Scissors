@@ -1,32 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPS-Game </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   
-   <div class="homescreen">
-    <h1 class="h101">Rock Paper Scissors</h1>
-    <button class="rps01">
-      rock
-    </button>
-    <button class="rps02">
-        paper
-    </button>
-    <button class="rps03">
-        sicissors
-    </button>
-   </div>
-
-</body>
-<script>
-
-
-
-    //returns rock;paper;scissors
+//returns rock;paper;scissors
 function getComputersChoice() 
 {
 let result
@@ -43,8 +15,22 @@ switch (result){
     break;
 }
 return result;
+
 }
 
+
+//returns players choice (RPS)
+function getPlayersChoice(){
+let plresult;
+plresult = prompt("ENTER : Rock, Paper ,Scissors")
+if(plresult === "Rock"||plresult === "Paper"||plresult === "Scissors"){
+    return plresult;
+}
+else if(plresult != "Rock"|| plresult != "Paper"|| plresult != "Scissors"){
+console.log("ENTER A CORRECT VALUE")
+}
+
+}
 
 function playRound(){
 let CoputerChoice = getComputersChoice();
@@ -77,8 +63,3 @@ else if(PlayerChoice === "Scissors" && CoputerChoice === "Rock"){
     console.log("you loose")
 }
 }
-  
-
-</script>
-
-</html>

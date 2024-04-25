@@ -2,30 +2,45 @@ body{
     background-color: dimgrey;
     display: flex;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .homescreen{
-   
+    display: flex;
+    align-items: center;
+    gap: 10px;
     background-color: ghostwhite;
     margin: 500px;
     border-radius: 20px;
-    width: 500px;
-    height: 260px;
+    min-width: 500px;
+    min-height: 260px;
+    padding-right: 50px;
 }
 
-.playbutton{
+.rps01{
     width: 90px;
     height: 40px;
     font-family: monospace;
     font-weight: 100;
     font-size: large;
-    margin-top: 50px;
-    margin-right: 300px;
-    margin-left: 200px;
-    margin-bottom: 100px;
-}
+    }
 .h101{
     margin-left: 100px;
     font-family: monospace;
     margin-top: 30px;
 }
+.rps02{
+    width: 90px;
+    height: 40px;
+    font-family: monospace;
+    font-weight: 100;
+    font-size: large;
+    }
+    .rps03{
+        width: 100px;
+        height: 40px;
+        font-family: monospace;
+        font-weight: 100;
+        font-size: large;
+        }
+    
