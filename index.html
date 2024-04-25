@@ -17,7 +17,7 @@
         paper
     </button>
     <button class="rps03">
-        sicissors
+        scissors
     </button>
    </div>
    <div class="result">
@@ -35,60 +35,40 @@
 </body>
 <script>
 
+  const rock = document.querySelector(".rps01");
+  const paper = document.querySelector(".rps02");
+  const scissors = document.querySelector(".rps03");
+ 
+  rock.addEventListener("click" , () => {
+   return playerChoice("rock");
+  });
+
+  paper.addEventListener("click" , () => {
+    return playerChoice("paper");
+  });
+
+  scissors.addEventListener("click" , () => {
+    return playerChoice("scissors");
+  });
 
 
-    //returns rock;paper;scissors
-function getComputersChoice() 
+  function getComputersChoice() 
 {
-let result
+let computerChoice;
 result = Math.floor(Math.random()*3)+1
-switch (result){
+switch (computerChoice){
     case 1 :
-    result = "Rock"
+        computerChoice ="rock"
     break;
     case 2:
-        result = "Paper"
+    computerChoice= "paper"
     break;
     case 3: 
-        result = "Scissors"
+   computerChoice = "scissors"
     break;
 }
-return result;
-}
-
-
-function playRound(){
-let CoputerChoice = getComputersChoice();
-let PlayerChoice = getPlayersChoice()
-if(PlayerChoice === "Paper" && CoputerChoice === "Paper" ){
-    console.log("its a tie")
-}
-else if(PlayerChoice === "Paper" && CoputerChoice === "Rock"){
-    console.log("you win");
-}
-else if(PlayerChoice === "Rock" && CoputerChoice === "Scissors"){
-    console.log("you win");
-}
-else if(PlayerChoice === "Scissors" && CoputerChoice === "Paper"){
-    console.log("you win");
-}
-else if(PlayerChoice === "Rock" && CoputerChoice === "Rock"){
-    console.log("its a tie")
-}
-else if(PlayerChoice === "Scissors" && CoputerChoice === "Scissors"){
-    console.log("its a tie")
-}
-else if(PlayerChoice === "Rock" && CoputerChoice === "Paper"){
-    console.log("you loose")
-}
-else if(PlayerChoice === "Paper" && CoputerChoice === "Scissors"){
-    console.log("you loose")
-}
-else if(PlayerChoice === "Scissors" && CoputerChoice === "Rock"){
-    console.log("you loose")
-}
-}
-  
+return computerChoice;
+ }
 
 </script>
 
