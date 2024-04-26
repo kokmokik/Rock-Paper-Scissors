@@ -21,7 +21,7 @@
     </button>
    </div>
    <div class="result">
-    <h1 class="h102">Result: <h2 class="res">lol</h2></h1>
+    <h1 class="h102">Result: <h2 class="res">playy !!! </h2></h1>
     <div class="container">
     <h3 class="computer">
         computer:
@@ -118,12 +118,16 @@ else if(PlayerChoice === "Scissors" && CoputerChoice === "Rock"){
    if (outcome === "win"){
     PcountNUM++
     countP.textContent = PcountNUM;
+    res.textContent =("you win");
    
    }
    else if (outcome === "loose"){
     CcountNUM++
     countC.textContent = CcountNUM;
-   
+    res.textContent = ("you loose");
+   }
+   else if (outcome === "tie"){
+    res.textContent = ("its a tie ");
    }
    }
    
