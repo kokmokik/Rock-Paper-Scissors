@@ -63,14 +63,20 @@ body{
         margin-top: 30px;
         margin-left: 200px;
         }
-    .Player,.computer{
+    .player,.computer{
         font-family: monospace;
       
     }
     .container{
         display: flex;
         gap: 150px;
-        margin-left: 150px;
         margin-bottom: 60px;
-        margin-top: 50px;
+        margin-top: 30px;
+        margin-right: 50px;
+        margin-left: 100px;
     }
+    .res{
+        margin-left : 230px;
+        font-family: monospace;
+    }
+
